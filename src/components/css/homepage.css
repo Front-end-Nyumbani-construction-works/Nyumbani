@@ -1,0 +1,44 @@
+/* Homepage background section */
+.header-background {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Headings specific to homepage */
+.header-background h1,
+.header-background h2 {
+  color: #ffffff;
+  margin: 0.3em 0;
+}
+
+/* Story button on homepage */
+.btn-story {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-story:hover {
+  background-color: darkorange;
+}

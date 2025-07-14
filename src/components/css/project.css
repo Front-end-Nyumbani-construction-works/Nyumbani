@@ -1,0 +1,83 @@
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info-box {
+    background: linear-gradient(to top, rgba(236, 249, 252, 0.5)50%,rgba(235, 251, 253, 0.5)50%);
+    border: 1px solid rgb(37, 20, 100) ; 
+    border-radius: 60px;
+    padding: 20px;
+    width: 35%;
+    height: 900px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+
+    
+
+  }
+  .info-box:hover{
+    color: rgb(200, 201, 194);   
+    cursor: pointer;
+  }
+  
+  .Project1-box {
+    margin-right: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  
+  .Project2-box {
+    margin-right: 20px;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Project3-box {
+    margin-right: 20px;
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Project4-box {
+    margin-right: 20px;
+    position: absolute;
+    top: 300%;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ .Project5-box {
+    margin-right: 20px;
+    position: absolute;
+    top: 300%;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ .Project6-box {
+    margin-right: 20px;
+    position: absolute;
+    top: 300%;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.section:hover{
+    color: rgb(250, 247, 247);   
+    cursor: pointer;
+}
