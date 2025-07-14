@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Header.css';  // Your custom styles with hover
+import { NavLink } from 'react-router-dom';
+
+import '../css/Header.css';  
 
 const Header = () => {
   return (
@@ -17,7 +19,9 @@ const Header = () => {
         <nav>
           <ul className="nav">
             <li className="nav-item">
-              <Link className="nav-link text-light" to="/">HOME</Link>
+                <NavLink className="nav-link text-light" to="/" activeClassName="active">HOME</NavLink>
+
+              {/* <Link className="nav-link text-light" to="/">HOME</Link> */}
             </li>
             <li className="nav-item">
               <Link className="nav-link text-light" to="/about">ABOUT US</Link>
@@ -29,7 +33,7 @@ const Header = () => {
               <Link className="nav-link text-light" to="/gallery">GALLERY</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light" to="/projects">PROJECTS</Link>
+              <Link className="nav-link text-light" to="/project">PROJECTS</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-light" to="/contact">CONTACT</Link>

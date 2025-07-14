@@ -9,13 +9,13 @@ function About() {
                 <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>ABOUT US</h1>
             </header>
 
-            <h2>
+            <p>
                 We as Nyumbani Construction Works have been operating as a registered business in Uganda since 12th June 2018.
                 Based in Najjera Town, Wakiso District, we have strived to establish ourselves as a forward-thinking construction company,
                 having been licensed to operate by Kampala City Council Authority in 2018. This is evident by the reputation we have earned 
                 from both clients and competitors in terms of quality, durability, and reliability of our end products, as well as our drive 
                 to satisfy customers. We provide innovative construction material solutions tailored to both residential and commercial needs.
-            </h2>
+            </p>
 
 <div className="info-container">
     <div className="info-box">
@@ -86,29 +86,13 @@ function About() {
                 </p>
             </div>
 
-            <div className="corevalues">
-                <h2>Core Values:</h2>
-                <ul>
-                    <li>Integrity</li>
-                    <li>Quality</li>
-                    <li>Customer Satisfaction</li>
-                </ul>
-            </div>
-
+            
             <div className="box">
-                <h2>Our Story</h2>
-                <p>
-                    Founded by passionate builders, we started with a goal to offer affordable, durable products to the local market.
-                </p>
-
             <h2>Meet Our Team</h2>
             <ul>
                 <li>James Muzinga – Founder & CEO</li>
                 <li>Operations Manager</li>
             </ul>
-
-            <h2>What Makes Us Unique</h2>
-            <p>We use eco-friendly techniques and local resources to deliver top-notch services.</p>
             </div>
         </>
     );
