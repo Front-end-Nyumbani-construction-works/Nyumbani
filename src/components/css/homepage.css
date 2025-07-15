@@ -1,31 +1,78 @@
+.header-background h1,
+.header-background h2 {
+  transition: transform 0.4s ease, color 0.4s ease, text-shadow 0.4s ease;
+}
+
 .header-background h1:hover,
 .header-background h2:hover {
   color: orange;
-  transform: scale(1.05);
-  transition: transform 0.3s, color 0.3s;
+  transform: scale(1.08);
+  text-shadow: 3px 3px 15px rgba(255, 165, 0, 0.9);
 }
 
-/* Optional: add a subtle glow effect on hover */
-.header-background h1:hover,
-.header-background h2:hover {
-  text-shadow: 2px 2px 12px rgba(255, 165, 0, 0.8);
+/* Button Styling */
+.btn-story {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-story:hover {
-  background-color: darkorange;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  background-color: #ff8703;
+  transform: scale(1.12);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  animation: pulse 0.6s;
 }
 
-/* Optional: Add a slight bounce or pulse effect */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% { transform: scale(1.12); }
+  50% { transform: scale(1.18); }
+  100% { transform: scale(1.12); }
 }
 
-.btn-story:hover {
-  animation: pulse 0.5s;
+/* Future Section */
+.future {
+  background: linear-gradient(135deg, #e0d8d2, #f7f1ec);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
+.future:hover {
+  color: #ff8703;
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Services Section */
+.services {
+  background: #e0d8d2;
+  height: 220px;
+  position: relative;
+  clip-path: polygon(
+    0% 100%,
+    0% 20%,
+    16.66% 25%,
+    33.33% 20%,
+    50% 25%,
+    66.66% 20%,
+    83.33% 25%,
+    100% 20%,
+    100% 100%
+  );
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.services:hover {
+  background: linear-gradient(135deg, #e0d8d2, #d1c4b2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

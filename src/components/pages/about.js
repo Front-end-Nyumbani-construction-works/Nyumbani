@@ -5,7 +5,18 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function About() {
     return (
         <>
-            <header>
+         <div
+              className="header-background d-flex flex-column justify-content-center align-items-center text-center"
+              style={{
+                backgroundImage: "url('/assets/back.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                minHeight: '100vh'
+              }}
+            >
+              <div className="aboutus-box">         
+               <header>
                 <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>ABOUT US</h1>
             </header>
 
@@ -16,6 +27,8 @@ function About() {
                 from both clients and competitors in terms of quality, durability, and reliability of our end products, as well as our drive 
                 to satisfy customers. We provide innovative construction material solutions tailored to both residential and commercial needs.
             </p>
+            </div>
+             </div>
 
 <div className="info-container">
     <div className="info-box">
@@ -35,65 +48,70 @@ function About() {
     </div>
 </div>
 
+<div className="corevalues">
+    <h1>
+        <img src="/assets/core values logo.png" alt="Core Values Icon"
+            style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
+        CORE VALUES
+    </h1>
 
-            <div className="corevalues">
-                <h1>
-                    <img src="/assets/core values logo.png" alt="Core Values Icon"
-                        style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
-                    CORE VALUES
-                </h1>
+    <div className="corevalues-row">
+        <div className="corevalue-box">
+            <h2>
+                <img src="/assets/professionalism.png" alt="Professionalism Icon"
+                    style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
+                Professionalism
+            </h2>
+            <p>
+                We believe in doing business in a professional and orderly manner.
+                We strive to maintain an organized and efficient work environment,
+                while encouraging a positive and supportive atmosphere.
+            </p>
+        </div>
 
-                <div className="corevalue-box">
-                    <h2>
-                        <img src="/assets/professionalism.png" alt="Professionalism Icon"
-                            style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
-                        Professionalism
-                    </h2>
-                    <p>
-                        We believe in doing business in a professional and orderly manner.
-                        We strive to maintain an organized and efficient work environment, while encouraging a positive and supportive atmosphere.
-                    </p>
-                </div>
+        <div className="corevalue-box">
+            <h2>
+                <img src="/assets/integrity.png" alt="Integrity Icon"
+                    style={{ width: '80px', height: '80px', marginRight: '10px', verticalAlign: 'middle' }} />
+                Integrity
+            </h2>
+            <p>
+                We believe in honesty and trust, working to build trust with our clients in each and every interaction.
+            </p>
+        </div>
 
-                <div className="corevalue-box">
-                    <h2>
-                        <img src="/assets/integrity.png" alt="Integrity Icon"
-                            style={{ width: '80px', height: '80px', marginRight: '10px', verticalAlign: 'middle' }} />
-                        Integrity
-                    </h2>
-                    <p>
-                        We believe in honesty and trust, working to build trust with our clients in each and every interaction.
-                    </p>
-                </div>
+        <div className="corevalue-box">
+            <h2>
+                <img src="/assets/exceptional service logo.png" alt="Exceptional Service Icon"
+                    style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
+                Exceptional Service
+            </h2>
+            <p>
+                We believe in providing exceptional service to our clients, delivering the best quality of products tailored to their tastes.
+            </p>
+        </div>
+    </div>
+</div>
 
-                <div className="corevalue-box">
-                    <h2>
-                        <img src="/assets/exceptional service logo.png" alt="Exceptional Service Icon"
-                            style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
-                        Exceptional Service
-                    </h2>
-                    <p>
-                        We believe in providing exceptional service to our clients, delivering the best quality of products tailored to their tastes.
-                    </p>
-                </div>
-            </div>
 
             <div className="whychooseus">
-                <h2>Why Choose Us:</h2>
+                <h2>WHY CHOSE US:</h2>
                 <p>
                     Exceptional service to our clients, delivering the best quality of products tailored to their tastes.
-                    Transparent communication with our clients, integrity in every transaction, long-term relationships, and consistent, reliable service.
+                    Transparent communication with our clients, open and honest dialogue at every stage of our work together. 
+                    Integrity in every transaction. We are committed to doing what's right, not just what's easy.
+                    Long-term Relationship building. We are focused on not only earning but also keeping your trust over time.
+                    Reliable and consistent service built on a foundation of mutual respect and accountability. 
+                    By fostering trust and acting with integrity, we aim to build lasting partnerships that go beyond business.
                 </p>
-            </div>
-
-            
-            <div className="box">
+                
             <h2>Meet Our Team</h2>
             <ul>
                 <li>James Muzinga – Founder & CEO</li>
                 <li>Operations Manager</li>
             </ul>
             </div>
+            
         </>
     );
 }
