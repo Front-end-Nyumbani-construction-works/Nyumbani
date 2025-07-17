@@ -6,33 +6,49 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function Contact() {
   return (
     <>
-      <header>
-        <h1>CONTACT US</h1>
-      </header>
-
+  
       <div className="contact-main-container">
         {/* Left Side: Image + Form */}
         <div className="left-side">
           <div className="contact-image">
             <img src="/assets/background image.jpeg" alt="Contact" className="contact-image" />
+            <div className="right-side">
+        <div className="contact-container">
+         <h2>CONTACT US</h2>
+         <p className="bi bi-whatsapp icon"> 0777191140</p>
+         <p className="bi bi-whatsapp icon"> 0777191140</p>
+         <p className="bi bi-envelope-fill icon"> Email</p>
+        </div>
+        
+ 
+        
+        <div className="contact-container">
+         <h2>SOCIAL MEDIA</h2>
+            <p>Reach out to us:</p>
+            <div className="contact-box"><i className="bi bi-facebook icon"></i></div>
+            <div className="contact-box"><i className="bi bi-linkedin icon"></i></div>
+            <div className="contact-box"><i className="bi bi-twitter-x icon"></i></div>
+        </div>
+        
+
+  
+        <div className="contact-container">
+         <h2>Working Hours</h2>
+            <p>We are open:</p>
+            <p>Monday to friday 8am-8pm</p>
+            <p>Saturday 9am-5pm</p>
+
+        </div>
+         </div>
           </div>
 
           <div className="form-wrapper">
             <ReachOutForm />
           </div>
         </div>
-
-        {/* Right Side: Contact boxes + Get in Touch */}
-        <div className="right-side">
-          <div className="info-container">
-            <div className="contact-box">CONTACT US 
-              <i className="bi bi-whatsapp icon"></i>Whatsapp</div>
-
-            <div className="contact-box"><i className="bi bi-envelope-fill icon"></i>Email</div>
-            <div className="contact-box"><i className="bi bi-facebook icon"></i>Facebook</div>
-            <div className="contact-box"><i className="bi bi-linkedin icon"></i>LinkedIn</div>
-            <div className="contact-box"><i className="bi bi-twitter-x icon"></i>Twitter</div>
-          </div>
+       
+       
+         
 
           <div className="contact-details">
             <h4>Have a question or need our services?
@@ -48,14 +64,8 @@ function Contact() {
             <img src="/assets/free.png" alt="Contact" className="contact-image" />
           </div>
 
-
-            {/* <h2>Get in Touch</h2>
-            <p>Email: nyumbaniconstructionworks@gmail.com</p>
-            <p>Phone: +256 123 456 789</p>
-            <p>Address: Plot 10, Main Street, Kampala, Uganda</p> */}
           </div>
         </div>
-      </div>
     </>
   );
 }

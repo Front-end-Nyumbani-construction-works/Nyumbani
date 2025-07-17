@@ -1,55 +1,89 @@
 .contact-main-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     align-items: flex-start;
+    justify-content: center;
     padding: 20px;
+    background-color: #fff7f0;
 }
 
 .left-side, .right-side {
-    flex: 1;
+    flex: 1 1 45%;
+    min-width: 300px;
 }
 
 .contact-image {
     border: 2px solid #ddd;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     display: block;
     margin: 0 auto 20px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+    transform: scale(1.05);
 }
 
 .form-wrapper {
     margin-top: 20px;
 }
 
-.info-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.contact-container {
+    background: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ec8e01;
+    border-radius: 40px;
     margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    width: 40%;
+    max-width: 200px;
+    height: auto;
 }
 
-.contact-box {
-    background: #f8f9fa;
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 45%;
+
+.contact-container h2 {
+    color: #ff8703;
+    margin-bottom: 10px;
 }
 
 .icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #ff8703;
+}
+
+.contact-box {
+    display: inline-block;
     font-size: 1.5rem;
+    margin: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-box:hover {
+    color: #ff8703;
+    transform: scale(1.2);
 }
 
 .contact-details {
     background: #f8f9fa;
-    padding: 15px;
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact-details h4 {
+    margin-bottom: 20px;
 }
 
 .reach-out-form {
@@ -57,6 +91,26 @@
     padding: 20px;
     background-color: #ff8703;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .left-side, .right-side {
+        flex: 1 1 100%;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
 }
