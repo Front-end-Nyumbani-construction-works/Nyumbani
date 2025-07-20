@@ -19,33 +19,33 @@ function Project() {
         <div className="info-boxes">
           <div className="info-box">
             <img src="/assets/cement.jpg" alt="Manufacturing cement blocks" />
-            <h2>Manufacturing cement blocks</h2>
+            <p>Manufacturing cement blocks</p>
           </div>
 
           <div className="info-box">
             <img src="/assets/pavers manufacturing.jpg" alt="Manufacturing pavers" />
-            <h2>Manufacturing pavers</h2>
+            <p>Manufacturing pavers</p>
           </div>
 
           <div className="info-box">
              <img src="/assets/tiles.jpg" alt="Manufacturing Tiles" />
-             <h2>Manufacturing Tiles</h2>
+             <p>Manufacturing Tiles</p>
           </div>
 
           <div className="info-box">
              <img src="/assets/delivery.jpg" alt="Delivering cement blocks" />
-             <h2>Delivering cement blocks</h2>
+             <p>Delivering cement blocks</p>
           </div>
 
           <div className="info-box">
             <img src="/assets/pavers installations.jpg" alt="Installing pavers" />
-            <h2>Installing pavers</h2>
+            <p>Installing pavers</p>
           </div>
 
 
           <div className="info-box">
                <img src="/assets/assembling tiles.jpg" alt="Assembling and installing Tiles" />
-            <h2>Assembling and installing Tiles</h2>
+            <p>Assembling and installing Tiles</p>
            </div>
         </div>
       </div>

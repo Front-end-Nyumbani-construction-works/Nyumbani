@@ -15,11 +15,11 @@ function About() {
                 minHeight: '100vh'
               }}
             >
-              <div className="aboutus-box">         
-               <header>
+              <header>
                 <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>ABOUT US</h1>
             </header>
 
+              <div className="aboutus-box">         
             <p>
                 We as Nyumbani Construction Works have been operating as a registered business in Uganda since 12th June 2018.
                 Based in Najjera Town, Wakiso District, we have strived to establish ourselves as a forward-thinking construction company,
@@ -49,11 +49,11 @@ function About() {
 </div>
 
 <div className="corevalues">
-    <h1>
+    <h2>
         <img src="/assets/core values logo.png" alt="Core Values Icon"
             style={{ width: '50px', height: '50px', marginRight: '10px', verticalAlign: 'middle' }} />
         CORE VALUES
-    </h1>
+    </h2>
 
     <div className="corevalues-row">
         <div className="corevalue-box">
@@ -104,13 +104,7 @@ function About() {
                     Reliable and consistent service built on a foundation of mutual respect and accountability. 
                     By fostering trust and acting with integrity, we aim to build lasting partnerships that go beyond business.
                 </p>
-                
-            <h2>Meet Our Team</h2>
-            <ul>
-                <li>James Muzinga – Founder & CEO</li>
-                <li>Operations Manager</li>
-            </ul>
-            </div>
+             </div>
             
         </>
     );

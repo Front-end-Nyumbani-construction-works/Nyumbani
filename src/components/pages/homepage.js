@@ -1,69 +1,110 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../css/homepage.css';
 
 function Homepage() {
   return (
     <>
-    <div className="home-page">
-      <div
-        className="header-background d-flex flex-column justify-content-center align-items-center text-center"
-        style={{
-          backgroundImage: "url('/assets/background image.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh'
-        }}
-      >
-        <h1 className="display-4 text-white" style={{ fontWeight: 'bold' }}>NYUMBANI CONSTRUCTION WORKS</h1>
-        <h2 className="h4 text-white" style={{ fontStyle: 'italic' }}>Your One Stop Shop For Construction Excellence</h2>
-        <Link to='/about' className="btn btn-warning mt-4">OUR STORY</Link>
-        <br /><br /><br /><br />
-      </div>
-
-      <div className="container">
-        <div className='future'>
-          <h1>Building Uganda's Future</h1>
-          <p>
-            At Nyumbani Construction Works, we specialize in delivering innovative and reliable construction solutions for both
-            residential and commercial projects. Since our establishment in 2018, we've grown into a trusted name in Uganda's
-            construction industry known for our commitment to quality, customer satisfaction, and sustainable practices. Based in
-            Najjera_Kungu, Wakiso District, we continue to shape the future by building with integrity and purpose.
-          </p>
-        </div>
- 
-        <div className="drive-content">
-          <div className="left-side">
-            <div className="drive-image">
-              <img src="/assets/free.png" alt="Contact" className="drive-image" />
-            </div>
-          </div>
-          
-          <div className="right-side">
-            <div className="drive-text">
-              <h1>What Drives Us:</h1>
-              <p>
-                Every project we undertake is a reflection of the values that define who we are. We are driven by
-                professionalism in all dealings, unwavering integrity in how we operate, and a relentless pursuit
-                of exceptional service that puts our clients first. These values guide our work, shape our relationships,
-                and inspire us to build with purpose and pride.
-              </p>
-            </div>
+      <div className="home-page">
+        <div
+          className="header-background d-flex flex-column justify-content-center align-items-center text-center"
+          style={{
+            backgroundImage: "url('/assets/background image.jpeg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            minHeight: '100vh',
+          }}
+        >
+          <div className="home-box">
+            <h2 className="h4 text-white" style={{ fontStyle: 'italic' }}>
+              Welcome to:
+            </h2>
+            <h1 className="display-4 text-white" style={{ fontWeight: 'bold' }}>
+              NYUMBANI CONSTRUCTION WORKS
+            </h1>
+            <h2 className="h4 text-white" style={{ fontStyle: 'italic' }}>
+              "We solve your construction problems and save your precious time."
+            </h2>
           </div>
         </div>
 
-        <div className='services'>
-          <h1>Our Services</h1>
-          <ul>
-            <li>Manufacturing of concrete blocks and building structures</li>
-            <li>Manufacturing and installation of pavers</li>
-            <li>Manufacture and installation of tiles</li>
-            <li>Sales of cement</li>
-          </ul>
+        <div className="container">
+          <div className="future">
+            <div className="drive-content">
+              <div className="drive-image">
+                <img src="/assets/free.png" alt="Contact" />
+              </div>
+
+              <div className="drive-text">
+                <h2>Are you a homeowner, contractor or builder?</h2>
+                <p>
+                  At Nyumbani, we offer top-quality materials that not
+                  only meet your structural needs but also elevate the aesthetics of every project.
+                  Build strong. Build beautiful.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h1 className="center-text">Our Services</h1>
+          <div className="info-container">
+            <div className="info-box">
+              <div className="services-box">
+                
+                  <img src="/assets/professionalism.png" alt="Professionalism Icon" />
+                 <h2> Manufacture of Concrete Blocks
+                </h2>
+                <p>
+                  We manufacture various concrete blocks in different sizes based on client preferences and structural needs.
+                </p>
+              </div>
+            </div>
+
+            <div className="info-box">
+              <div className="services-box">
+                <img src="/assets/integrity.png" alt="Integrity Icon" />
+                <h2>
+                  High-Quality Pavers
+                </h2>
+                <p>
+                  We manufacture and install eco-friendly, durable, and visually appealing pavers in multiple types and colors.
+                </p>
+              </div>
+            </div>
+
+            <div className="info-box">
+              <div className="services-box">
+                
+                  <img src="/assets/exceptional service logo.png" alt="Exceptional Service Icon" />
+                 <h2> Premium Tiles</h2>
+                <p>
+                  Our premium tiles cater to residential, commercial, and industrial needs, tailored to your desired aesthetics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h1 className="center-text">Our Team</h1>
+          <div className="team-container">
+            <div className="team-image">
+              <img src="/assets/pic2.jpg" alt="Team Member 1" />
+              <h3>Muzinga James</h3>
+              <h4>CEO & FOUNDER</h4>
+            </div>
+
+            <div className="team-image">
+              <img src="/assets/free.png" alt="Team Member 2" />
+              <h3>Mr. Mutyaba Shafik</h3>
+              <h4>Operations Manager</h4>
+            </div>
+
+            <div className="team-image">
+              <img src="/assets/pic2.jpg" alt="Team Member 3" />
+              <h3>Kiyimba Moses</h3>
+              <h4>Head of Production</h4>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
