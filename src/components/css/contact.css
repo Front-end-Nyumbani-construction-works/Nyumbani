@@ -12,33 +12,40 @@
     min-width: 300px;
 }
 
-.contact-image {
-    border: 2px solid #ddd;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px auto;
+/* Contact Banner Image (rectangle on top of right side) */
+.contact-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
 }
 
-.contact-image:hover {
-    transform: scale(1.05);
+/* Removed the circular image styles from the first image */
+.contact-image {
+    display: none; /* Hide if any contact-image class remains */
 }
 
+/* Form Wrapper */
 .form-wrapper {
     margin-top: 20px;
 }
 
-.right-top-boxes {
+/* Right Side Structure */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle-boxes {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/* Box Styling */
 .contact-container {
     background: #f8f9fa;
     padding: 10px;
@@ -46,10 +53,13 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    width: 280px;
 }
 
-.contact-container.full-width {
+.small-box {
+    width: 220px;
+}
+
+.full-width {
     width: 100%;
     margin-top: 20px;
 }
@@ -57,16 +67,22 @@
 .contact-box h2 {
     color: #ff8703;
     margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact-box p {
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
 
 .icon {
-    font-size: 1.3rem;
-    margin-right: 10px;
+    font-size: 1.1rem;
+    margin-right: 8px;
     color: #ff8703;
 }
 
 .contact-icons i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0 8px;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
@@ -91,30 +107,26 @@
     margin-bottom: 10px;
 }
 
-.contact-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+/* Extra image (from services) styled neatly */
+.extra-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
-    .right-top-boxes {
+    .middle-boxes {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-container {
+    .small-box {
         width: 90%;
     }
 
-    .contact-image {
-        width: 180px;
-        height: 180px;
-    }
-
-    .contact-images {
-        flex-direction: column;
-        align-items: center;
+    .contact-banner {
+        width: 100%;
     }
 }

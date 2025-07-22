@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+.header {
+  position: relative;
+  z-index: 10; /* Make sure header is above the orange rectangle */
+  background-color: #1a1a1a; /* Your existing header background */
+  padding: 20px 0;
+  color: #F8F9FA;
+  border-bottom: 4px solid orange;
+  margin-bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Orange rectangle spanning below header and overlapping homepage */
+.orange-bridge-rectangle {
+  position: absolute;
+  top: 70px;       /* Adjust based on your header height */
+  left: 0;
+  width: 100vw;
+  height: 60px;    /* Height of the orange rectangle */
+  background-color: orange;
+  z-index: 5;      /* Below header nav but above page backgrounds */
+  pointer-events: none; /* So clicks pass through */
+  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.5); /* Optional glow */
 }

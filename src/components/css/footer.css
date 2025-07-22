@@ -20,6 +20,12 @@
   font-size: 0.9rem;
   color: #ddd;
 }
+.footer-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 8px;
+}
+
 
 .footer ul {
   list-style: none;

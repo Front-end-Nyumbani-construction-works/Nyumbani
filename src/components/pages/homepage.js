@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/homepage.css';
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   return (
@@ -82,28 +83,13 @@ function Homepage() {
                 </p>
               </div>
             </div>
+
+            <Link to="/services" className="services-button">
+              VIEW ALL SERVICES
+            </Link>
           </div>
 
-          <h1 className="center-text">Our Team</h1>
-          <div className="team-container">
-            <div className="team-image">
-              <img src="/assets/pic2.jpg" alt="Team Member 1" />
-              <h3>Muzinga James</h3>
-              <h4>CEO & FOUNDER</h4>
-            </div>
-
-            <div className="team-image">
-              <img src="/assets/free.png" alt="Team Member 2" />
-              <h3>Mr. Mutyaba Shafik</h3>
-              <h4>Operations Manager</h4>
-            </div>
-
-            <div className="team-image">
-              <img src="/assets/pic2.jpg" alt="Team Member 3" />
-              <h3>Kiyimba Moses</h3>
-              <h4>Head of Production</h4>
-            </div>
-          </div>
+          
         </div>
       </div>
     </>

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import {
   FaInstagram, FaFacebook, FaWhatsapp, FaTwitter,
-  FaHome, FaUtensils, FaGift, FaEnvelope, FaCommentDots,
-  FaShieldAlt, FaLock, FaQuestionCircle, FaShippingFast
+  FaHome, FaUtensils, FaGift, FaEnvelope, FaCommentDots
 } from 'react-icons/fa';
 
 import '../css/footer.css';
@@ -15,9 +14,10 @@ const Footer = () => {
       style={{
         backgroundImage: "url('/assets/footer image.jpg')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'top',
         backgroundRepeat: 'no-repeat',
-        minHeight: '100vh'
+        padding: '40px 0',
+        color: '#fff'
       }}
     >
       <div className="footer-overlay">
@@ -28,10 +28,10 @@ const Footer = () => {
               <h5 className="mt-3 text-warning">Nyumbani Construction</h5>
               <p>Building with integrity and professionalism.</p>
               <ul className="list-unstyled">
-                <li><FaInstagram className="me-2"/> Instagram</li>
-                <li><FaFacebook className="me-2"/> Facebook</li>
-                <li><FaWhatsapp className="me-2"/> WhatsApp</li>
-                <li><FaTwitter className="me-2"/> Twitter</li>
+                <li><a href="#" className="text-white text-decoration-none"><FaInstagram className="me-2" /> Instagram</a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaFacebook className="me-2" /> Facebook</a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaWhatsapp className="me-2" /> WhatsApp</a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaTwitter className="me-2" /> Twitter</a></li>
               </ul>
             </Col>
 
@@ -45,35 +45,21 @@ const Footer = () => {
             <Col md={3} className="mb-4">
               <h5 className="text-warning">Quick Links</h5>
               <ul className="list-unstyled">
-                <li><FaHome className="me-2"/> Home</li>
-                <li><FaUtensils className="me-2"/> About Us</li>
-                <li><FaGift className="me-2"/> Projects</li>
-                <li><FaEnvelope className="me-2"/> Contact</li>
-                <li><FaCommentDots className="me-2"/> Services</li>
-              </ul>
-
-              <h5 className="text-warning mt-3">Utilities</h5>
-              <ul className="list-unstyled">
-                <li><FaShieldAlt className="me-2"/> Terms & Conditions</li>
-                <li><FaLock className="me-2"/> Privacy Policy</li>
-                <li><FaQuestionCircle className="me-2"/> Help Center</li>
-                <li><FaShippingFast className="me-2"/> Track Order</li>
+                <li><FaHome className="me-2" /> Home</li>
+                <li><FaUtensils className="me-2" /> About Us</li>
+                <li><FaGift className="me-2" /> Projects</li>
+                <li><FaEnvelope className="me-2" /> Contact</li>
+                <li><FaCommentDots className="me-2" /> Services</li>
               </ul>
             </Col>
 
-            <Col md={3}>
-              <h5 className="text-warning mb-3">Gallery</h5>
-              <Row>
-                {[1, 2, 3, 4, 5, 6].map(i => (
-                  <Col xs={6} className="mb-3" key={i}>
-                    <Card className="bg-light">
-                      <Card.Img src='../assets/pavers manufacturing.jpg' alt='Manufacturing pavers' />
-
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
+            <Col md={3} className="mb-4">
+              <h5 className="text-warning">Our Location</h5>
+              <p>Visit us for consultations or material purchases.</p>
+              <p>Najjera Kungu, Wakiso-Kampala</p>
+              <p>Open Mon-Sat: 8:00am - 6:00pm</p>
             </Col>
+
           </Row>
 
           <hr className="border-light" />

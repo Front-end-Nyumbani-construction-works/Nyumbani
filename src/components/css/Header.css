@@ -56,3 +56,16 @@ body {
   color: black !important;
   border: 1px solid #fff;
 }
+
+.orange-bridge-rectangle {
+  position: absolute; /* Or fixed if you want it to stick on scroll */
+  top: 70px;          /* Adjust this to your header height */
+  left: 0;
+  width: 200vw;       /* Full width */
+  height: 60px;       /* Height of the rectangle */
+  background-color: orange;
+  z-index: 5;         /* Below header nav links but above background */
+  pointer-events: none; /* Don’t interfere with clicks */
+  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.5);
+}
+
