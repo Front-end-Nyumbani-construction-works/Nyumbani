@@ -11,27 +11,19 @@ const Footer = () => {
   return (
     <footer
       className="footer"
-      style={{
-        backgroundImage: "url('/assets/footer image.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'top',
-        backgroundRepeat: 'no-repeat',
-        padding: '40px 0',
-        color: '#fff'
-      }}
     >
       <div className="footer-overlay">
         <Container>
           <Row>
             <Col md={3} className="mb-4">
-              <Image src="/assets/logo1.png" roundedCircle width={60} />
+              {/* <Image src="/assets/logo1.png" roundedCircle width={60} /> */}
               <h5 className="mt-3 text-warning">Nyumbani Construction</h5>
               <p>Building with integrity and professionalism.</p>
               <ul className="list-unstyled">
-                <li><a href="#" className="text-white text-decoration-none"><FaInstagram className="me-2" /> Instagram</a></li>
-                <li><a href="#" className="text-white text-decoration-none"><FaFacebook className="me-2" /> Facebook</a></li>
-                <li><a href="#" className="text-white text-decoration-none"><FaWhatsapp className="me-2" /> WhatsApp</a></li>
-                <li><a href="#" className="text-white text-decoration-none"><FaTwitter className="me-2" /> Twitter</a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaInstagram className="me-2" /></a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaFacebook className="me-2" /></a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaWhatsapp className="me-2" /></a></li>
+                <li><a href="#" className="text-white text-decoration-none"><FaTwitter className="me-2" /></a></li>
               </ul>
             </Col>
 

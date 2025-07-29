@@ -8,9 +8,10 @@ import Contact from './components/pages/contact';
 import Project from './components/pages/project';
 import Services from './components/pages/services';
 import Footer from './components/pages/footer';
+import BookService from './components/pages/BookService';
+import MyBookings from './components/pages/MyBookings';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './components/css/homeAndHeader.css';  
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/book/:id" element={<BookService />} />
+        <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
